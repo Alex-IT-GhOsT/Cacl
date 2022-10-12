@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.header {
+   
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.block {
+    padding: 15px;
+    background: red;
+}
+
+
+.title {
+    display: grid;
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-columns: repeat(2,1fr);
+
+    
+
+}
+
+.title #inp1{
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+.title #inp2{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.title #inp3{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+input{
+    text-align: right;
+
+}
+
+
+.subtitle {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    'btn1 btn1 btn1 btn2'
+    'btn1 btn1 btn1 btn2'
+    'btn1 btn1 btn1 btn3'
+    'btn1 btn1 btn1 btn3';
+}
+
+
+.btn  {
+    font-size: 15px;
+    font-weight: bold;
+    color: blueviolet;
+    background-color: beige;
+    
+
+}
+
+.btn:hover{
+    background-color: rgb(109, 109, 78);
+    color: aqua;
+}
+
+
+.btn:active{
+    background-color: red;
+    
+}
+#q{
+    grid-area: btn2;
+}
+
+#s{
+    grid-area: btn3;
+}
+#del{
+    grid-column: 1/-1;
+}
+
+.toggle{
+    background-color: green;
+}
+
+input[disabled ='true']{
+    background-color: silver;
+}
+
+[disabled]{
+    background-color: red;
+    
+}
+
+
